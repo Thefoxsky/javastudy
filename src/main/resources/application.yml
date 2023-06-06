@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: '@environment@'
+
+  security:
+    user:
+      name: wsp
+      password: 7813
+      roles:
+        - user
+        - admin
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_manage
+    username: root
+    password: 7813
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /static/**
+
+
